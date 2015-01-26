@@ -21,6 +21,8 @@ On my other computer:
 3. Plug in both cards (4GB+, 16GB+) into the computer and reboot
   * Note: Boot options in the BIOS may need to be updated
 4. Install Ubuntu as normal onto the larger (16+GB) SD card.
+  * Do not set up a swap partition/file as this will cause excessive
+    wear and tear on the SD card
   * Bonus points: use full disk encryption
 
 ## Preparing the Chromebook
@@ -54,9 +56,10 @@ At this point Ubuntu is booted and partially functional. Notably, the trackpad d
 
 ## Cleanup and other notes
 * Installing the mainline kernel fixes numerous issues but has a few drawbacks:
-  1. Need to periodically check for security updates to the kernel
-  2. Keep getting updates to standard Ubuntu kernels. To fix:
-    * `$ sudo apt-get remove TODO`
+  1. Need to periodically check for security updates to the mainline
+     kernel
+  2. Keep getting updates to the (unused) standard Ubuntu kernels.
+    * Remove the standard kernels to fix this.
 
 ## References
 * [http://www.chromium.org/chromium-os/developer-information-for-chrome-os-devices/hp-chromebook-14](http://www.chromium.org/chromium-os/developer-information-for-chrome-os-devices/hp-chromebook-14)
