@@ -50,12 +50,12 @@ At this point Ubuntu is booted and partially functional. Notably, the trackpad d
 ```
 $ sudo apt-get update && sudo apt-get -u upgrade
 ```
-3. [Download](http://kernel.ubuntu.com/~kernel-ppa/mainline/) and install the latest [stable](http://www.kernel.org) kernel (v3.18+, generic, amd64)
+3. Copy the config files in this repository into their respective places
+4. [Download](http://kernel.ubuntu.com/~kernel-ppa/mainline/) and install the latest [stable](http://www.kernel.org) kernel (v3.18+, generic, amd64)
 ```
 $ sudo dpkg -i linux-*.deb 
 $ sudo update-grub
 ```
-4. Copy the config files in this repository into their respective places
 5. Reboot and enjoy
 
 ## Cleanup and other notes
