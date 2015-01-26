@@ -33,10 +33,8 @@ On my other computer:
 4. Wait for the machine to be wiped and reboot
 5. Login as Guest and open a terminal (CTRL+Shift+T)
 6. Enable booting from SD Card:
-```
-$ sudo crossystem dev_boot_usb=1
-$ sudo crossystem dev_boot_legacy=1
-```
+  * `$ sudo crossystem dev_boot_usb=1`
+  * `$ sudo crossystem dev_boot_legacy=1`
 7. Insert 16GB+ SD card and reboot
 8. At the scary screen, hit CTRL-L
 9. Boot from the SD card
@@ -47,24 +45,19 @@ At this point Ubuntu is booted and partially functional. Notably, the trackpad d
 
 1. Open a terminal window
 2. Make sure Ubuntu is up-to-date
-```
-$ sudo apt-get update && sudo apt-get -u upgrade
-```
+  * `$ sudo apt-get update && sudo apt-get -u upgrade`
 3. Copy the config files in this repository into their respective places
 4. [Download](http://kernel.ubuntu.com/~kernel-ppa/mainline/) and install the latest [stable](http://www.kernel.org) kernel (v3.18+, generic, amd64)
-```
-$ sudo dpkg -i linux-*.deb 
-$ sudo update-grub
-```
+  * `$ sudo dpkg -i linux-*.deb`
+  * `$ sudo update-grub`
 5. Reboot and enjoy
 
 ## Cleanup and other notes
 * Installing the mainline kernel fixes numerous issues but has a few drawbacks:
   1. Need to periodically check for security updates to the kernel
   2. Keep getting updates to standard Ubuntu kernels. To fix:
-```
-$ sudo apt-get remove TODO
-```
+    * `$ sudo apt-get remove TODO`
 
 ## References
 * [http://www.chromium.org/chromium-os/developer-information-for-chrome-os-devices/hp-chromebook-14](http://www.chromium.org/chromium-os/developer-information-for-chrome-os-devices/hp-chromebook-14)
+* [https://github.com/eyecreate/ubuntu-chromebook-installer](https://github.com/eyecreate/ubuntu-chromebook-installer)
