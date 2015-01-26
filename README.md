@@ -8,19 +8,20 @@ These steps produce a dual-boot system where ChromeOS runs off the built-in SSD 
 
 * HP Chromebook 14 (Falco)
 * Another computer (Linux, Mac, or Windows)
-* 4GB+ USB thumb-drive or SD card
+* 1GB+ USB thumb-drive or SD card
 * 16GB+ high performance (UHS3) SD card + reader (different than above)
-* USB Mouse
+* USB Mouse (optional, but recommended)
 
 ## Installing Ubuntu onto the SD card
 
 On my other computer:
 
 1. [Download](http://www.ubuntu.com/download/desktop) Ubuntu 14.04+ Desktop 64-bit ISO
-2. Create a bootable USB/SDCard (4GB+) from the ISO ([linux](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-ubuntu), [mac](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx), [windows](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows))
-3. Plug in both cards (4GB+, 16GB+) into the computer and reboot
+2. Create a bootable USB/SDCard (1GB+) from the ISO ([linux](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-ubuntu), [mac](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx), [windows](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows))
+3. Plug in both cards (1GB+, 16GB+) into the computer and reboot
+  * Boot off of the 1GB+ card (ubuntu installation media)
   * Note: Boot options in the BIOS may need to be updated
-4. Install Ubuntu as normal onto the larger (16+GB) SD card.
+4. Install Ubuntu as normal onto the larger (16GB+) SD card.
   * Do not set up a swap partition/file as this will cause excessive
     wear and tear on the SD card
   * Bonus points: use full disk encryption
