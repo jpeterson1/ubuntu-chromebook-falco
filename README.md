@@ -61,3 +61,4 @@ At this point Ubuntu is booted and partially functional. Notably, the trackpad d
 ## References
 * [http://www.chromium.org/chromium-os/developer-information-for-chrome-os-devices/hp-chromebook-14](http://www.chromium.org/chromium-os/developer-information-for-chrome-os-devices/hp-chromebook-14)
 * [https://github.com/eyecreate/ubuntu-chromebook-installer](https://github.com/eyecreate/ubuntu-chromebook-installer)
+* [https://wiki.archlinux.org/index.php/Chromebook](https://wiki.archlinux.org/index.php/Chromebook)
