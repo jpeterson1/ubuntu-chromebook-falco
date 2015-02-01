@@ -1,0 +1,22 @@
+# Default settings for chromium-browser. This file is sourced by /bin/sh from
+# /usr/bin/chromium-browser
+
+# Disable DRI3 as it causes chromium to crash.
+# http://code.google.com/p/chromium/issues/detail?id=415681
+LIBGL_DRI3_DISABLE=1
+
+# Options to pass to chromium-browser
+CHROMIUM_FLAGS=""
+
+# part for pepperflashplugin-nonfree : begin
+
+flashso="/usr/lib/pepperflashplugin-nonfree/libpepflashplayer.so"
+
+if [ -f $flashso ]
+then
+        flashversion=`strings $flashso 2> /dev/null | grep LNX | cut -d ' ' -f 2 | sed -e "s/,/./g"`
+        CHROMIUM_FLAGS="$CHROMIUM_FLAGS --ppapi-flash-path=$flashso --ppapi-flash-version=$flashversion"
+fi
+
+# part for pepperflashplugin-nonfree : end
+
